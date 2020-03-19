@@ -18,7 +18,7 @@ function evaluarTipoPersona(birthday) {
   console.log(edad);
   let respuesta = 0;
 
-  if (edad > 0 && edad < 7) {
+  if (edad >= 0 && edad < 7) {
       //console.log(`Menor ${edad}`)
     respuesta = EnumPersonas.PersonaMenor;
   } else {
