@@ -21,6 +21,7 @@ router(app);
 app.use(`${config.publicRoute}`, express.static('public'));
 
 app.get("/cool",(req, res)=>{res.send(cool())})
+app.get("/testENV",(req, res)=>{res.send(`${config.test}`)})
 
 server.listen(config.port, () => {
   console.log(`la app esta funcionando en ${config.host}:${config.port}`);
